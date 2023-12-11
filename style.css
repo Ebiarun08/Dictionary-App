@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    transition: 0.3s;
+}
+body{
+    background: linear-gradient(130deg,rgb(8, 6, 6),rgb(195, 187, 187));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    min-height: 100vh;
+    background-color:rgba(255, 255, 255, 0.355);
+    border-radius: 10px;
+    margin-top: 30px;
+    align-items: center;
+    
+}
+.container i{
+    font-size: 44px;
+    color:gray;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    box-shadow: 0 3px 20px rgba(211,211,211,0.667);
+    top: 0;
+    /* left: 0; */
+    right: 50%;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.serach-inputs{
+    display: flex;
+    
+    margin-top: 80px;
+    justify-content: center;
+    /* background-color: black; */
+    background: linear-gradient(130deg,rgb(8, 6, 6),rgb(94, 93, 93));
+}
+
+.serach-inputs input{
+    max-width: 600px;
+    width: 40%;
+    height: 40px;
+    box-shadow: 0 3px 20px rgba(211,211,211,0.667);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    color: black;
+    font-weight: 600;
+
+}
+.serach-inputs input:focus{
+outline: none;
+}
+ button{ 
+    box-shadow: 0 3px 20px rgba(211,211,211,0.667);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid white;
+    outline: 0;
+    background: gray;
+    height: 40px;
+    padding: 8px;
+    width: 80px;
+    font-weight: 600;
+    color: #fff;
+}
+.serach-results{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #fff;
+}
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color:#fff;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #fff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+.serach-results #noun{
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.serach-results #verb{
+    font-style: bold;
+    margin-bottom: 10px;
+}
+.serach-results small{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+#input-word{
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
